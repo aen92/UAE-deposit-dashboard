@@ -260,3 +260,5 @@ def refresh_data():
     df['last_scraped'] = datetime.now(timezone.utc).isoformat()
     df.to_csv(DATA_PATH, index=False)
     return df
+
+fix: JSON null → Python None
